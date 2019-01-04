@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Dog API</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container class= "dogForm"">
+    <h1>Get between 1 and 50 dog images you want </h1>
+
+
+      <label for=".inputBtn">Select the number between 1 and 50  </label>
+      <input class = "inputBtn"
+      max = "50" min = "1" type="number"value="3" placeholder="3">
+      <button type ="submit" id ="randomImg">Submit</button>
+      <div><label for=".dogBreed">Select a breed</label>
+      <input type="text" class ="dogBreed">
+      <button type ="submit" id ="selectDogBreed">Submit</button>
+      </div>
+
+    <section class="results hidden">
+      <h2>Look at these cute dogs!!</h2>
+      <div class = "searchResults"> </div>
+
+    </section>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
